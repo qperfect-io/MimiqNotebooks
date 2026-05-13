@@ -1,0 +1,33 @@
+# QPerfect dark theme — companion to strasbourg_markets_demo.theme
+# Activate with: from strasbourg_markets_demo import theme; theme.apply()
+#
+# Dark GitHub-style backgrounds, accent palette as the default color cycle.
+
+figure.facecolor : 0d1117
+axes.facecolor   : 161b22
+axes.edgecolor   : 8b949e
+axes.labelcolor  : e6edf3
+axes.titlecolor  : e6edf3
+axes.titlesize   : 14
+axes.titleweight : bold
+axes.grid        : True
+grid.color       : 30363d
+grid.alpha       : 0.4
+
+xtick.color      : 8b949e
+ytick.color      : 8b949e
+text.color       : e6edf3
+
+font.size        : 11
+
+# Note: the emoji-aware font.family fallback chain is set programmatically
+# by `theme.apply()` based on which fonts the host actually has installed,
+# to avoid matplotlib's "Font family X not found" log spam.
+
+savefig.facecolor : 0d1117
+savefig.edgecolor : 0d1117
+
+# Default qualitative color cycle drawn from the QPerfect accent palette.
+# Order chosen so the first three colors (cyan, red, green) read as
+# "primary / contrast / agreement" — matches how Aymane's notebook uses them.
+axes.prop_cycle : cycler('color', ['22d3ee', 'ff4757', '2ed573', 'ffa502', 'a29bfe', '1e90ff', 'f78fb3', '00b894', 'fd9644', 'e84393'])
